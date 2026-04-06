@@ -543,11 +543,19 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-doc;refersTo"/>
-				<owl:someValuesFrom rdf:resource="&fibo-fbc-pas-caa;GeneralLedger"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-pas-caa;LedgerAccount"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>chart of accounts</rdfs:label>
 		<skos:definition>structured system of financial account codes used to classify, record, and organize an entity&apos;s financial transactions in accordance with applicable legal, regulatory, and reporting requirements</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-pas-caa;ClientAccount">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;Account"/>
+		<rdfs:label>client account</rdfs:label>
+		<skos:definition>account that records and administers financial assets, liabilities, transactions, or positions on behalf of a specific customer or portfolio</skos:definition>
+		<skos:example>Examples include customer accounts (banking, payments, deposits), brokerage accounts (securities trading and custody), portfolio accounts (investment management, discretionary mandates), retirement accounts, margin accounts, custody accounts, and so forth.</skos:example>
+		<cmns-av:explanatoryNote>Client accounts are external-facing relationship-level or service-level accounts maintained on behalf of a customer. Such accounts may be associated with a contract and other documentation outlining the specifics of the relationship with the customer.</cmns-av:explanatoryNote>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;CloseDate">
@@ -565,7 +573,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;CustomerAccount">
-		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;Account"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;ClientAccount"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;exemplifies"/>
@@ -679,7 +687,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:label>general ledger</rdfs:label>
-		<skos:definition>accounting record summarizing changes in position as transactions are posted during an accounting period</skos:definition>
+		<skos:definition>organized collection of ledger accounts used to record and summarize changes in position as transactions are posted during an accounting period</skos:definition>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;IndividualTransaction">
@@ -807,7 +815,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;InvestmentOrDepositAccount">
-		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;Account"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;ClientAccount"/>
 		<rdfs:label>investment or deposit account</rdfs:label>
 		<skos:definition>account associated with a product or service that requires the account holder to provide funds for management by the account provider</skos:definition>
 		<cmns-av:explanatoryNote>The account holder may or may not be entitled to consideration in exchange for providing such funds, for example, interest, depending on the type of account and the terms and conditions associated with it. Also, there may be fees associated with management services provided by the account provider. Note too that this may be an internal account held on behalf of an institution or a customer account.</cmns-av:explanatoryNote>
@@ -816,7 +824,9 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;LedgerAccount">
 		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;Account"/>
 		<rdfs:label>ledger account</rdfs:label>
-		<skos:definition>account recorded in a general ledger</skos:definition>
+		<owl:disjointWith rdf:resource="&fibo-fbc-pas-caa;ClientAccount"/>
+		<skos:definition>individual record for one element or sub-element in a ledger that records and summarizes increases, decreases, and balances associated with that specific element</skos:definition>
+		<cmns-av:explanatoryNote>Ledger accounts are internal to a legal entity&apos;s accounting system(s).</cmns-av:explanatoryNote>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;LendingOfficer">
@@ -827,7 +837,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;LoanOrCreditAccount">
-		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;Account"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-pas-caa;ClientAccount"/>
 		<rdfs:label>loan or credit account</rdfs:label>
 		<owl:disjointWith rdf:resource="&fibo-fbc-pas-caa;InvestmentOrDepositAccount"/>
 		<skos:definition>account associated with a service in which the account holder receives funds from the account provider under certain terms and conditions for repayment</skos:definition>
