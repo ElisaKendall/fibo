@@ -857,7 +857,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Assets">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - assets</rdfs:label>
-		<skos:definition>classifier that applies to ledger accounts ...</skos:definition>
+		<skos:definition>classifier for ledger accounts used to track economic resources that an entity controls as a result of past events and expects to generate future economic benefits</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Assets</cmns-txt:hasTextValue>
@@ -866,7 +866,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Equity">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - equity</rdfs:label>
-		<skos:definition>classifier that applies to ledger accounts ...</skos:definition>
+		<skos:definition>classifier for ledger accounts used to track the remainder after liabilities are deducted from assets</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Equity</cmns-txt:hasTextValue>
@@ -875,7 +875,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Expenses">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - expenses</rdfs:label>
-		<skos:definition>classifier that applies to ledger accounts ...</skos:definition>
+		<skos:definition>classifier for ledger accounts used to track decreases in economic benefits resulting from outflows or consumption of assets or increases in liabilities</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Expenses</cmns-txt:hasTextValue>
@@ -884,7 +884,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Liabilities">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - liabilities</rdfs:label>
-		<skos:definition>classifier that applies to ledger accounts ...</skos:definition>
+		<skos:definition>classifier for ledger accounts used to track obligations whose settlement is expected to involve transferring assets, providing services, or other outflows of resources</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Liabilities</cmns-txt:hasTextValue>
@@ -893,7 +893,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Revenue">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - revenue</rdfs:label>
-		<skos:definition>classifier that applies to ledger accounts ...</skos:definition>
+		<skos:definition>classifier for ledger accounts used to track increases in assets or decreases in liabilities arising from an entity&apos;s ordinary business activities</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Revenue</cmns-txt:hasTextValue>
