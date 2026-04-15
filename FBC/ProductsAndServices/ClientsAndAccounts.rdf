@@ -87,7 +87,7 @@
 	
 	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/">
 		<rdfs:label>Clients and Accounts Ontology</rdfs:label>
-		<dct:abstract>This ontology provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities.</dct:abstract>
+		<dct:abstract>This ontology provides basic concepts related to accounts, including internal accounts such as ledger accounts as well as accounts managed for external parties, that are commonly used by financial services providers.</dct:abstract>
 		<dct:license>Copyright (c) 2015-2026 EDM Association dba EDM Council, Inc.
 Copyright (c) 2015-2026 Object Management Group, Inc.
 		
@@ -545,7 +545,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:subClassOf rdf:resource="&cmns-col;Arrangement"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
-				<owl:onProperty rdf:resource="&cmns-doc;refersTo"/>
+				<owl:onProperty rdf:resource="&cmns-cls;characterizes"/>
 				<owl:someValuesFrom rdf:resource="&fibo-fbc-pas-caa;LedgerAccount"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
@@ -688,7 +688,6 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;IndividualTransaction">
 		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-fd;DatedCollectionConstituent"/>
 		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-oc;Occurrence"/>
-		<rdfs:subClassOf rdf:resource="&cmns-ra;RegistryEntry"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-ra;isRegisteredIn"/>
@@ -857,7 +856,10 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Assets">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - assets</rdfs:label>
-		<skos:definition>classifier for ledger accounts used to track economic resources that an entity controls as a result of past events and expects to generate future economic benefits</skos:definition>
+		<dct:source>&apos;Conceptual Framework for Financial Reporting&apos;, September 2024, Financial Accounting Standards Board (FASB).</dct:source>
+		<skos:definition>classifier for ledger accounts used to track present rights of an entity to an economic benefit</skos:definition>
+		<cmns-av:explanatoryNote>A present right of an entity to an economic benefit entitles the entity to the economic benefit and the ability to restrict others&apos; access to the benefit to which the entity is entitled. Assets are economic resources that an entity controls as a result of past events and that it expects to generate future economic benefits.</cmns-av:explanatoryNote>
+		<cmns-av:explanatoryNote>Assets commonly have features that help identify them - for example, assets may be contractual, tangible, exchangeable, or separable. However, those features are not essential characteristics of assets. Their absence is not sufficient to preclude an item from qualifying as an asset.</cmns-av:explanatoryNote>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Assets</cmns-txt:hasTextValue>
@@ -866,7 +868,9 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Equity">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - equity</rdfs:label>
-		<skos:definition>classifier for ledger accounts used to track the remainder after liabilities are deducted from assets</skos:definition>
+		<dct:source>&apos;Conceptual Framework for Financial Reporting&apos;, September 2024, Financial Accounting Standards Board (FASB).</dct:source>
+		<skos:definition>classifier for ledger accounts used to track the residual interest in the assets of an entity that remains after deducting its liabilities</skos:definition>
+		<cmns-av:synonym>Net Assets</cmns-av:synonym>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Equity</cmns-txt:hasTextValue>
@@ -875,7 +879,8 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Expenses">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - expenses</rdfs:label>
-		<skos:definition>classifier for ledger accounts used to track decreases in economic benefits resulting from outflows or consumption of assets or increases in liabilities</skos:definition>
+		<dct:source>&apos;Conceptual Framework for Financial Reporting&apos;, September 2024, Financial Accounting Standards Board (FASB).</dct:source>
+		<skos:definition>classifier for ledger accounts used to track outflows or other using up of assets of an entity or incurrences of its liabilities (or a combination of both) from delivering or producing goods, rendering services, or carrying out other activities</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Expenses</cmns-txt:hasTextValue>
@@ -884,7 +889,10 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Liabilities">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - liabilities</rdfs:label>
-		<skos:definition>classifier for ledger accounts used to track obligations whose settlement is expected to involve transferring assets, providing services, or other outflows of resources</skos:definition>
+		<dct:source>&apos;Conceptual Framework for Financial Reporting&apos;, September 2024, Financial Accounting Standards Board (FASB).</dct:source>
+		<skos:definition>classifier for ledger accounts used to track present obligations of an entity to transfer an economic benefit</skos:definition>
+		<cmns-av:explanatoryNote>Liabilities are obligations whose settlement is expected to involve transferring assets, providing services, or other outflows of resources.</cmns-av:explanatoryNote>
+		<cmns-av:explanatoryNote>Liabilities commonly have features that help identify them. For example, many liabilities require the obligated entity to pay cash to one or more identified other entities. Liabilities may not require an entity to pay cash but may require the entity to convey other assets, provide services, or transfer other economic benefits or to be ready to do so.</cmns-av:explanatoryNote>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Liabilities</cmns-txt:hasTextValue>
@@ -893,7 +901,8 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	<owl:NamedIndividual rdf:about="&fibo-fbc-pas-caa;LedgerAccountClassifier-Revenue">
 		<rdf:type rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassifier"/>
 		<rdfs:label>ledger account classifier - revenue</rdfs:label>
-		<skos:definition>classifier for ledger accounts used to track increases in assets or decreases in liabilities arising from an entity&apos;s ordinary business activities</skos:definition>
+		<dct:source>&apos;Conceptual Framework for Financial Reporting&apos;, September 2024, Financial Accounting Standards Board (FASB).</dct:source>
+		<skos:definition>classifier for ledger accounts used to track inflows or other enhancements of assets of an entity or settlements of its liabilities (or a combination of both) from delivering or producing goods, rendering services, or carrying out other activities</skos:definition>
 		<cmns-col:isMemberOf rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-dsg:isDefinedIn rdf:resource="&fibo-fbc-pas-caa;LedgerAccountClassificationScheme"/>
 		<cmns-txt:hasTextValue>Revenue</cmns-txt:hasTextValue>
