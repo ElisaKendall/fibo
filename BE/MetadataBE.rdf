@@ -38,8 +38,8 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/BE/MetadataBE/">
-		<rdfs:label>Metadata about the EDMC-FIBO Business Entities (BE) Domain</rdfs:label>
-		<dct:abstract>This ontology provides metadata about the FIBO Business Entities (BE) Domain, which covers defines business concepts that are used for data governance, interoperability, and in regulatory reporting about business entities.
+		<rdfs:label>Metadata about the FIBO Business Entities (BE) Domain</rdfs:label>
+		<dct:abstract>This ontology provides metadata about the FIBO Business Entities (BE) Domain, which defines business concepts for data governance, interoperability, and in regulatory reporting about business entities.
 
 The scope of the BE domain includes business and legal entity concepts that are considered by financial industry firms, regulators and other industry participants relevant to financial services and more broadly, including:
  - Legal entities generally

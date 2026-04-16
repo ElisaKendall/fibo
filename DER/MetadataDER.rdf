@@ -30,7 +30,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/DER/MetadataDER/">
-		<rdfs:label>Metadata about the EDMC-FIBO Derivatives (DER) Domain</rdfs:label>
+		<rdfs:label>Metadata about the FIBO Derivatives (DER) Domain</rdfs:label>
 		<dct:abstract>The Derivatives (DER) Domain covers many of the concepts that are common to derivative instruments, including but not limited to options, futures, forwards, swaps, and a wide range of other derivatives. This ontology provides metadata about the Derivatives Domain and its contents.</dct:abstract>
 		<dct:issued rdf:datatype="&xsd;dateTime">2018-08-27T18:00:00</dct:issued>
 		<dct:license>Copyright (c) 2018-2026 EDM Association dba EDM Council, Inc.

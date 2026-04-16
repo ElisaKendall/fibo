@@ -26,7 +26,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/BP/MetadataBP/">
-		<rdfs:label>Metadata for the EDMC-FIBO Business Process (BP) Domain</rdfs:label>
+		<rdfs:label>Metadata for the FIBO Business Process (BP) Domain</rdfs:label>
 		<dct:abstract>The Business Process (BP) domain includes ontologies that define financial process flows such as securities issuance and transaction workflows. In the case of securities issuance process models, these are provided in order to be able to represent reference data concepts that are dependent on the process by which a security was issued. Transaction process semantics provide the basis for the temporal dimension of securities and derivatives transactions.  These are process models represented using basic semantic primitive concepts of events, activities and control flows.
 		
 		Note that the ontologies included in the BP domain are considered provisional and have not undergone serious review or integration with other parts of FIBO as of Q1 2026.</dct:abstract>

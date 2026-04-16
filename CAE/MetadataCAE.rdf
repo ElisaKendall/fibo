@@ -24,7 +24,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/CAE/MetadataCAE/">
-		<rdfs:label>Metadata about the EDMC-FIBO Corporate Actions and Events (CAE) Domain</rdfs:label>
+		<rdfs:label>Metadata about the FIBO Corporate Actions and Events (CAE) Domain</rdfs:label>
 		<dct:abstract>The Corporate Actions and Events (CAE) domain covers events and actions that may occur during the life of a security, ranging from announcements regarding stock offerings, splits, dividends and so forth, as well as more general business events that are relevant to investors and regulators alike.</dct:abstract>
 		<dct:issued rdf:datatype="&xsd;dateTime">2018-08-27T18:00:00</dct:issued>
 		<dct:license>Copyright (c) 2018-2026 EDM Association dba EDM Council, Inc.
