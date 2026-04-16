@@ -107,8 +107,8 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>FIBO IND Domain</dct:title>
 		<dct:title>Financial Industry Business Ontology (FIBO) Indices and Indicators (IND) Domain</dct:title>
-		<rdfs:altLabel>Indices and Indicators (IND)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:resource="https://www.edmcouncil.org/fibo/"/>
+		<skos:altLabel>Indices and Indicators (IND)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2014-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2014-2026 Object Management Group</cmns-av:copyright>
 	</owl:NamedIndividual>

@@ -103,8 +103,8 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>FIBO SEC Domain</dct:title>
 		<dct:title>Financial Industry Business Ontology (FIBO) Securities (SEC) Domain</dct:title>
-		<rdfs:altLabel>Securities (SEC)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:resource="https://www.edmcouncil.org/fibo/"/>
+		<skos:altLabel>Securities (SEC)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2018-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2018-2026 Object Management Group</cmns-av:copyright>
 	</owl:NamedIndividual>

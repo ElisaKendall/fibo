@@ -71,8 +71,8 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>FIBO BP Domain</dct:title>
 		<dct:title>Financial Industry Business Ontology (FIBO) Business Process (BP) Domain</dct:title>
-		<rdfs:altLabel>Business Process (BP)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:resource="https://spec.edmcouncil.org/fibo/"/>
+		<skos:altLabel>Business Process (BP)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2013-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 	</owl:NamedIndividual>
 
