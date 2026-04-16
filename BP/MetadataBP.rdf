@@ -31,8 +31,7 @@
 		
 		Note that the ontologies included in the BP domain are considered provisional and have not undergone serious review or integration with other parts of FIBO as of Q1 2026.</dct:abstract>
 		<dct:issued rdf:datatype="&xsd;dateTime">2018-08-27T18:00:00</dct:issued>
-		<dct:license>Copyright (c) 2018-2026 EDM Association dba EDM Council, Inc.
-Copyright (c) 2018-2026 Object Management Group
+		<dct:license>Copyright (c) 2013-2026 EDM Association dba EDM Council, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &apos;Software&apos;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
