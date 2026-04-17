@@ -124,8 +124,8 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>FIBO FND Domain</dct:title>
 		<dct:title>Financial Industry Business Ontology (FIBO) Foundations (FND) Domain</dct:title>
-		<rdfs:altLabel>Foundations (FND)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://spec.edmcouncil.org/fibo/</rdfs:seeAlso>
+		<skos:altLabel>Foundations (FND)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2013-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2013-2026 Object Management Group</cmns-av:copyright>
 	</owl:NamedIndividual>

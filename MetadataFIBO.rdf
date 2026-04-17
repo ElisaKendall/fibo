@@ -106,8 +106,8 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>Financial Industry Business Ontology (FIBO)</dct:title>
-		<rdfs:altLabel>Financial Industry Business Ontology (FIBO)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://spec.edmcouncil.org/fibo/</rdfs:seeAlso>
+		<skos:altLabel>Financial Industry Business Ontology (FIBO)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2013-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2013-2026 Object Management Group</cmns-av:copyright>
 	</owl:NamedIndividual>

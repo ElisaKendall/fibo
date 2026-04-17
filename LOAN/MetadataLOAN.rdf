@@ -84,8 +84,8 @@ See https://opensource.org/licenses/MIT.</dct:license>
 		<dct:modified rdf:datatype="&xsd;dateTime">2026-04-15T18:00:00</dct:modified>
 		<dct:title>EDMC Financial Industry Business Ontology (FIBO) Loans (LOAN) Domain</dct:title>
 		<dct:title>FIBO LOAN Domain</dct:title>
-		<rdfs:altLabel>Loans (LOAN)</rdfs:altLabel>
 		<rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://spec.edmcouncil.org/fibo/</rdfs:seeAlso>
+		<skos:altLabel>Loans (LOAN)</skos:altLabel>
 		<cmns-av:copyright>Copyright (c) 2018-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2018-2026 Object Management Group</cmns-av:copyright>
 	</owl:NamedIndividual>
