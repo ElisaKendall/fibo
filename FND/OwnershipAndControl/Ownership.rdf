@@ -82,7 +82,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FND/20230301/OwnershipAndControl/Ownership.rdf version of this ontology was modified to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380).</skos:changeNote>
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FND/20240101/OwnershipAndControl/Ownership.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389).</skos:changeNote>
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FND/20250301/OwnershipAndControl/Ownership.rdf version of the ontology was modified to add an explanatory note to ownership (SEC-202).</skos:changeNote>
-		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FND/20250701/OwnershipAndControl/Ownership.rdf version of the ontology was modified to incorporate concepts that were originally in the accounting equity ontology into this ontology to improve usability (FND-409) and to add the concept of a portfolio and holding in order to further simplify imports and improve usability and maintenance (SEC-219).</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FND/20250701/OwnershipAndControl/Ownership.rdf version of the ontology was modified to incorporate concepts that were originally in the accounting equity ontology into this ontology to improve usability (FND-409) and to add the concept of a portfolio and holding in order to further simplify imports and improve usability and maintenance (SEC-219), and to add the definition ofdigital asset (FBC-336).</skos:changeNote>
 		<fibo-fnd-utl-av:hasMaturityLevel rdf:resource="&fibo-fnd-utl-av;Release"/>
 		<cmns-av:copyright>Copyright (c) 2013-2025 Object Management Group, Inc.</cmns-av:copyright>
 		<cmns-av:copyright>Copyright (c) 2013-2026 EDM Association dba EDM Council, Inc.</cmns-av:copyright>
@@ -119,7 +119,9 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:label>asset</rdfs:label>
 		<skos:definition>something of monetary value that is owned or provides benefit to some party</skos:definition>
 		<cmns-av:adaptedFrom>Financial Accounting Standards Board (FASB) Statement of Financial Accounting Concepts No. 6, Elements of Financial Statements, paragraph 25.</cmns-av:adaptedFrom>
+		<cmns-av:adaptedFrom>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6, which references the definition from ISO 22739 in defining the notion of a digital asset for the purposes of blockchain technology.</cmns-av:adaptedFrom>
 		<cmns-av:explanatoryNote>An asset is something that provides probable future economic benefit obtained or controlled by some party as a result of past transactions or events. An asset has three essential characteristics: (a) it embodies a probable future benefit that involves a capacity, singly or in combination with other assets, to contribute directly or indirectly to future net cash inflows, (b) a party can obtain the benefit and control others&apos; access to it, and (c) the transaction or other event giving rise to the party&apos;s right to or control of the benefit has already occurred.</cmns-av:explanatoryNote>
+		<cmns-av:explanatoryNote>ISO 22739:2024 defines asset as &apos;anything that has value to a stakeholder&apos;, without being specific as to the form &apos;value&apos; takes.</cmns-av:explanatoryNote>
 		<cmns-av:synonym>economic resource</cmns-av:synonym>
 	</owl:Class>
 	
@@ -127,6 +129,23 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;PaidInCapital"/>
 		<rdfs:label>capital surplus</rdfs:label>
 		<skos:definition>capital contributed in excess of the par value (stated value) of the ownership interest issued</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fnd-oac-own;DigitalAsset">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;Asset"/>
+		<rdfs:label>digital asset</rdfs:label>
+		<skos:definition>asset that exists only in digital form or that is the digital representation of another asset</skos:definition>
+		<cmns-av:adaptedFrom>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6, which references the definition from ISO 22739 in defining the notion of a digital asset for the purposes of blockchain technology.</cmns-av:adaptedFrom>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fnd-oac-own;DigitalToken">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;DigitalAsset"/>
+		<rdfs:label>digital token</rdfs:label>
+		<dct:source>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6.</dct:source>
+		<skos:definition>fungible digital asset which uses distributed ledger technology for its issuance, storage, exchange, record of ownership or transaction validation and is not a currency</skos:definition>
+		<skos:note>Digital assets described by non-standard terms, including but not limited to cryptocurrency, virtual currency, digital currency, utility token, security token, cryptoasset, payment token, stablecoin or coloured coin, are considered digital tokens for the purposes ISO 24165.</skos:note>
+		<cmns-av:explanatoryNote>Because digital currencies are considered digital tokens according to ISO 24165, we have not included a disjointness relationship between digital token and currency, though the definition implies that such a disjointness should be present.</cmns-av:explanatoryNote>
+		<cmns-av:explanatoryNote>ISO 24165 defines the term &apos;fungible&apos; as something &apos;capable of mutual substitution between the individual units of digital assets.</cmns-av:explanatoryNote>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fnd-oac-own;EarningsBeforeInterestTaxesDepreciationAmortization">
@@ -193,6 +212,14 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<skos:definition>identifiable, non-monetary asset that lacks physical substance</skos:definition>
 		<skos:example>Intangible assets may include intellectual property, patents, copyrights, trademarks, rights-of-way (easements), brands, organizational abilities (know-how), and data.</skos:example>
 		<cmns-av:explanatoryNote>Intangible assets include assets that may involve a legal claim to some future benefit, typically a claim to future cash. Intangible assets have become an increasingly larger component of the valuation for all companies, from newer social media companies to even the most established and iconic manufacturers.</cmns-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fnd-oac-own;NonFungibleToken">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;DigitalToken"/>
+		<rdfs:label>non-fungible token</rdfs:label>
+		<dct:source>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6.</dct:source>
+		<skos:definition>unique digital token that represents proof of ownership of one or more tangible and/or intangible assets with unique metadata and/or identification such that no two are identical or fungible</skos:definition>
+		<cmns-av:abbreviation>NFT</cmns-av:abbreviation>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fnd-oac-own;Owner">
