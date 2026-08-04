@@ -142,7 +142,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;DigitalAsset"/>
 		<rdfs:label>digital token</rdfs:label>
 		<dct:source>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6.</dct:source>
-		<skos:definition>fungible digital asset which uses distributed ledger technology for its issuance, storage, exchange, record of ownership or transaction validation and is not a currency</skos:definition>
+		<skos:definition>digital asset which uses distributed ledger technology for its issuance, storage, exchange, record of ownership or transaction validation and is not a currency</skos:definition>
 		<skos:note>Digital assets described by non-standard terms, including but not limited to cryptocurrency, virtual currency, digital currency, utility token, security token, cryptoasset, payment token, stablecoin or coloured coin, are considered digital tokens for the purposes ISO 24165.</skos:note>
 		<cmns-av:explanatoryNote>Because digital currencies are considered digital tokens according to ISO 24165, we have not included a disjointness relationship between digital token and currency, though the definition implies that such a disjointness should be present.</cmns-av:explanatoryNote>
 		<cmns-av:explanatoryNote>ISO 24165 defines the term &apos;fungible&apos; as something &apos;capable of mutual substitution between the individual units of digital assets.</cmns-av:explanatoryNote>
@@ -175,6 +175,14 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<rdfs:label>financial asset</rdfs:label>
 		<skos:definition>non-physical, tangible asset whose value is derived from a contractual claim, such as bank deposits, bonds, stocks, rights, certificates, and bank balances</skos:definition>
 		<cmns-av:explanatoryNote>Financial assets are typically more liquid than other tangible assets, such as commodities or real estate. Financial assets may not cover all assets that might be included on a balance sheet, and do not include tangible, physical assets or intangible assets such as intellectual property.</cmns-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fnd-oac-own;FungibleToken">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-oac-own;DigitalToken"/>
+		<rdfs:label>fungible token</rdfs:label>
+		<owl:disjointWith rdf:resource="&fibo-fnd-oac-own;NonFungibleToken"/>
+		<skos:definition>digital token capable of mutual substitution between the individual units of digital assets</skos:definition>
+		<cmns-av:adaptedFrom>ISO 24165-2:2025, Digital token identifier (DTI), Registration, assignment and structure, Second edition, 2025-6.</cmns-av:adaptedFrom>
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fnd-oac-own;Holding">
