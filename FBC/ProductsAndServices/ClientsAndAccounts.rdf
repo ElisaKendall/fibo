@@ -818,7 +818,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 	</owl:Class>
 	
 	<owl:Class rdf:about="&fibo-fbc-pas-caa;Ledger">
-		<rdfs:subClassOf rdf:resource="&fibo-fnd-arr-doc;Record"/>
+		<rdfs:subClassOf rdf:resource="&cmns-doc;Record"/>
 		<rdfs:subClassOf>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="&cmns-col;comprises"/>
