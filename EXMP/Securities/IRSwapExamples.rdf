@@ -111,7 +111,7 @@ THE SOFTWARE IS PROVIDED &apos;AS IS&apos;, WITHOUT WARRANTY OF ANY KIND, EXPRES
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/Documents/"/>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/Identifiers/"/>
 		<owl:imports rdf:resource="https://www.omg.org/spec/Commons/Locations/"/>
-		<owl:versionIRI rdf:resource="https://spec.edmcouncil.org/fibo/ontology/DER/20260701/Securities/IRSwapExamples/"/>
+		<owl:versionIRI rdf:resource="https://spec.edmcouncil.org/fibo/ontology/EXMP/20260701/Securities/IRSwapExamples/"/>
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/DER/20200601/Securities/IRSwapExamples.rdf version of this ontology was revised to replace uses of hasTag in Relations with hasTag from LCC, as the more complex union of datatypes in the Relations concept is not needed here.</skos:changeNote>
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/DER/20200701/Securities/IRSwapExamples.rdf version of this ontology was modified to move the property &apos;exchanges&apos; to FND given that it could be applied more generally than with respect to swaps only.</skos:changeNote>
 		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/DER/20210101/Securities/IRSwapExamples.rdf version of this ontology was modified to correct properties that were modified in the main ontology but not in the examples.</skos:changeNote>
